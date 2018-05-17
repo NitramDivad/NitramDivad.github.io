@@ -30,7 +30,21 @@
     <div id="content">
         <div id="contact-me">
             <h1>Contact</h1>
-            <hr size="3" width="94%" noshade>
+            <hr size="3" noshade>
+        
+            <form id="contact" action="https://formspree.io/webdevelopment.du@gmail.com" method="post">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="_name" placeholder="John Smith" required/><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="_replyto" id="_email" placeholder="example@gmail.com" required/><br>
+                <label for="message">Message</label><br>
+                <textarea rows="8" name="message" id="_message" required></textarea><br>
+                <input type="submit" value="Submit" name="submit" id="btnsubmit"><span> </span><br>
+                <input type="hidden" name="_subject" value="My Portfolio Contact Form Inquiry" />
+                <input type="text" name="_gotcha" id="_spam" />
+                <input type="hidden" name="_next" value="" />
+                <!--input type="hidden" name="_cc" value=contact._replyto.value /-->
+            </form>
         </div>
     </div>
 
