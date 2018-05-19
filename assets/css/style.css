@@ -36,7 +36,6 @@ header {
 	position: relative; 
 	top: 0;
 	float: left;
-
 	height: 90px;
 	min-height: 100%;
 	overflow: auto;
@@ -52,6 +51,25 @@ header {
 	background-color: #ffffff;
 }
 
+ul li {
+	list-style-type: none;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+#nav-a {
+	margin: 0;
+	color: #aaa;
+	float: right;
+	line-height: 90px;
+	padding: 0 0 0 8%;
+	text-decoration: none;
+}
+
+#nav-a:hover {
+	text-shadow: 2px 2px 5px gray;
+}
+
 #content {
 	position: absolute;
 	top: 92px; 
@@ -59,21 +77,9 @@ header {
 	left: 0; 
 	width: 100%;  
 	overflow: auto; 
-	background-image: url("../images/grey.jpg");
+	background-image: url("../images/white_plaster.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-#about-me {
-	position: relative;
-	width: 960px;
-	height: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	background-color: #ffffff;
-	border: 2px solid darkgray;
 }
 
 #footer {
@@ -112,24 +118,42 @@ header {
 	font-family: "Georgia", Times, "Times New Roman", serif;
 }
 
-ul:not(:last-child) {
-	border-right: 3x solid black;
+
+/* Index About Me Page Styling */
+#about-me {
+	position: relative;
+	width: 960px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #ffffff;
+	border: 2px solid #dddddd;
 }
 
-ul li {
-	list-style-type: none;
-	font-size: 24px;
-	font-weight: 500;
+#about-img {
+	float: left;
+	padding: 0 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	height: auto;
+	max-width: 75%;
 }
 
-#nav-a {
-	margin: 0;
-	color: #aaa;
-	float: right;
-	line-height: 90px;
-	padding: 0 2%;
-	text-decoration: none;
+#about-content {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
+
+#about-content p {
+	margin-top: 10px;
+	margin-right: 30px;
+	margin-left: 30px;
+	line-height: 34px;
+}
+
 
 
 /* Portfolio Page Styling */
@@ -142,14 +166,13 @@ ul li {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	background-color: #ffffff;
-	border: 2px solid darkgray;
+	border: 2px solid #dddddd;
 }
 
 .row {
 	display: flex;
 	flex-wrap: wrap;
 	width: 900px;
-
 	margin-top: 30px;
 	margin-left: 10px;
 }
@@ -167,10 +190,9 @@ ul li {
 	width: 275px;
 	padding-bottom: 50px;
 	z-index: 1;
-
 }
 
-.picture-text1, .picture-text4 {
+.photo-folio1, .photo-folio4 {
 	position: absolute;
 	background-color: #4aaaa5;
 	top: 17%;
@@ -180,9 +202,10 @@ ul li {
 	z-index: 1;
 	font-size: 24px;
 	font-weight: 500;
+	text-align: center;
 }
 
-.picture-text2, .picture-text5 {
+.photo-folio2, .photo-folio5 {
 	position: absolute;
 	background-color: #4aaaa5;
 	top: 50.3%;
@@ -191,10 +214,11 @@ ul li {
 	height: 50px;
 	z-index: 1;
 	font-size: 24px;
-	font-weight: 500;	
+	font-weight: 500;
+	text-align: center;
 }
 
-.picture-text3 {
+.photo-folio3 {
 	position: absolute;
 	background-color: #4aaaa5;
 	top: 83.6%;
@@ -203,7 +227,20 @@ ul li {
 	height: 50px;
 	z-index: 1;
 	font-size: 24px;
-	font-weight: 500;	
+	font-weight: 500;
+	text-align: center;
+}
+
+.caption {
+	position: absolute;
+	margin: 0;
+	color: white;
+	font-size: 24px;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	font-family: "Georgia", Times, "Times New Roman", serif;
 }
 
 
@@ -217,7 +254,7 @@ ul li {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	background-color: #ffffff;
-	border: 2px solid darkgray;
+	border: 2px solid #dddddd;
 	padding-bottom: 30px;
 }
 
@@ -230,6 +267,8 @@ ul li {
 #_name, #_email, #_message {
 	margin-bottom: 25px;
 	width: 900px;
+	line-height: 20px;
+	font-size: 16px;
 }
 
 #_spam {
@@ -245,7 +284,6 @@ ul li {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 18px;
-	margin: 5px;
 	padding: 20px;
 	width: 150px;
 	transition: all 0.5s;
@@ -254,29 +292,5 @@ ul li {
 
 #btnsubmit:hover {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-#btnsubmit span {
-	display: inline-block;
-	position: relative;
-	transition: 0.5s;
-}
-  
-#btnsubmit span:after {
-
-	content: '\1f4e7';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -35px;
-	transition: 0.5s;
-}
-  
-#btnsubmit:hover span {
 	padding-right: 25px;
-}
-  
-#btnsubmit:hover span:after {
-	opacity: 1;
-	right: 0;
 }
