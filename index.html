@@ -5,42 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>About Me</title>
+    <title>About</title>
 </head>
-<body>
-    <div id="header-border">
-        <header>
-            <div id="header-name">
-                <p id="name">David Martin</p>
+
+<body id="content">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top col-md-12" id="nav-border">
+        <div class="container">
+            <div id="nav-name">
+                <a class="navbar-brand pl-3" href="#">David Martin</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a class="nav-a" href="contact.html">Contact</a></li>
-                    <li><a class="nav-a" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="nav-a" href="index.html">About</a></li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link pl-5" href="index.html">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-5" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-5" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-        <div class="clear-left"></div>
-    </div>
+            </div>
+        </div>
+    </nav>
 
-    <div id="content">
-        <div id="about-me">
-            <h1>About Me</h1>
-            <hr>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="main col-md-8">
+                <div id="main-panel">
+                    <h1>About</h1>
+                    <hr id="hr-about">
+                    <div class="pl-4 pr-4">
+                        <img src="assets/images/img_4013.png" id="about-img" class="img-fluid pt-1 pb-2 pr-3 float-left" alt="My A-Basin Ski Photo">
+                        <p>Hi. As you may have guessed by now, I'm David. I'm a Kentucky native who has lived in Denver, CO for about eleven years. I work as a software engineer in the lending sector creating and maintaining mortgage origination software. A little known fact about me? I have been bestowed a title of honor as a <a href="https://en.wikipedia.org/wiki/Kentucky_Colonel" target="_blank" class="site-link">Kentucky Colonel</a>.</p>
+                        <p>You likely noticed from the photo that I"m a skier...and a relatively new skier at that. Although I only have two seasons under my belt, I have made the effort to ski as much as I can. For the 2017-2018 season, I hit the slopes for over 225,000 vertical feet of skiing. I tend to ski mostly at A-Basin, Vail, Beaver Creek, and Keystone.</p>
+                        <p>Beyond skiing, I travel as much as I can. I don't seem to get home to Kentucky as much as I'd like to, though! Any sort of outdoor activity is a plus with me, but with a six-month Web Development bootcamp underway, there's not going to be much time this summer to be outdoors hiking, biking, or even traveling for that matter.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div id="about-content">
-                <img src="assets/images/img_4013.png" id="about-img" alt="My A-Basin Ski Photo">
-                <p>Hi. As you may have guessed by now, I'm David. I'm a Kentucky native who has lived in Denver, CO for about eleven years. I work as a software engineer in the lending sector creating and maintaining mortgage origination software. A little known fact about me? I have been bestowed a title of honor as a <a href="https://en.wikipedia.org/wiki/Kentucky_Colonel" target="_blank" class="site-link">Kentucky Colonel</a>.</p>
-                <p>You likely noticed from the photo that I"m a skier...and a relatively new skier at that. Although I only have two seasons under my belt, I have made the effort to ski as much as I can. For the 2017/2018 season, I hit the slopes for over 225,000 vertical feet of skiing. I tend to ski mostly at A-Basin, Vail, Beaver Creek, and Keystone.</p>
-                <p>Beyond skiing, I travel as much as I can. I don't seem to get home to Kentucky as much as I'd like to, though! Any sort of outdoor activity is a plus with me, but with a six-month Web Development bootcamp underway, there's not going to be much time this summer to be outdoors hiking, biking, or even traveling for that matter.</p>
+            <div class="sidebar col-md-4">
+                <div class="card">
+                    <div>
+                        <h1 class="card-title">Connect with Me</h1>
+                        <hr id="hr-connect">
+                        <ul class="social pl-5">
+                            <li class="pb-3"><a href="https://github.com/NitramDivad" target="_blank" class="site-link"><i><img src="assets/images/Github.png" alt="GitHub" class="img-fluid pr-3"></i>Github</a></li>
+                            <li class="pb-3"><a href="https://www.linkedin.com/in/david-martin-7a51a86" target="_blank" class="site-link"><i><img src="assets/images/LinkedIn.png" alt="LinkedIn" class="img-fluid pr-3"></i>LinkedIn</a></li>
+                            <li class="pb-3"><a href="https://twitter.com/" target="_blank" class="site-link"><i><img src="assets/images/Twitter.png" alt="Twitter" class="img-fluid pr-3"></i>Twitter (to be added)</a></li>
+                            <li class="pb-3"><a href="https://instagram.com/" target="_blank" class="site-link"><i><img src="assets/images/Instagram.png" alt="Instagram" class="img-fluid pr-3"></i>Instagram (to be added)</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="footer">
-        <p>Copyright &copy;</p> 
-    </div>
+    <footer class="footer-copyright text-center fixed-bottom bg-dark">
+        <span>Copyright &copy; David Martin</span>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>
